@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+
+
+     html{
+        height: 100%;
+     }
+  *{ padding: 0;
+    margin:0;}
+
+body{
+    background-image: url(//images/pexels-felix-mittermeier-956999.jpg);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+text-align: center;
+font-weight: bolder;
+display: flex;
+flex-direction: column;
+min-height: 100%;
+
+}
+header{
+    display: grid;
+    justify-content: center;
+   
+}
+header .logo{
+    margin: 0;
+    padding: 24px 30px;
+    font-weight: bold;
+    color:  blueviolet;
+    font-size: 1.6em;
+  
+  }
+.menu{
+    list-style-type:none
+
+    
+ }
+.menu{
+    border: 3px solid rgb(8, 8, 6);
+       
+list-style: none;
+padding: 0;
+background: rgb(255, 255, 255);
+        
+width: 100%;
+margin: 20px auto;
+max-width: 1000px;
+
+}
+  .color-acento{
+    color: blueviolet;
+  }
+.h2{
+    display: flex;
+}
+.menu li{
+    display: inline-block;
+
+}
+
+.menu li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+.menu li a:hover{
+    background: blueviolet
+}
+.envoltura2{
+    border: 3px solid rgb(255, 255, 255);
+    height: 100%;
+    
+}
+.logoars{
+    border:transparent
+}
+.varios{
+    display: grid;
+}
+.delimitador{
+    width:320px;
+    margin:auto;
+    }
+    
+    .contenedor{
+    height:0px;
+    width:100%;
+    max-width:560px; 
+    padding-top:56.25%; 
+    position:relative;
+    }
+    
+    iframe{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    }
+.titulo{
+    border: 3px solid rgb(250, 245, 245);
+}
+.bienvenidos{
+    border: 3px solid rgb(255, 255, 255);
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+.diego1{
+    color: black;
+    border: 3px solid black;
+}
+.diego2{
+    color: black;
+    border: 4px solid black;
+}
+
+footer{
+    padding: 3em;
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+header{
+    grid-area: header;
+}
+.envoltura3{
+    grid-area: envoltura3;
+}
+.envoltura2{
+    grid-area: envoltura2;
+}
+.bienvenidos{
+    grid-area: bienvenidos;
+}
+.video{
+    grid-area: video;
+}
+footer{
+    grid-area: video;
+}
+.diego1{
+    grid-area: diego1;
+}
+.diego2{
+    grid-area: diego2;
+}
+.varios{
+    grid-area: varios;
+    
+}
+.galeria{
+    grid-area: galeria;
+}
+.delimitador{
+    grid-area: delimitador;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 1.5em;
+    display: grid;
+  
+}
+
+.table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+}
+
+.table caption {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 8px 0px;
+}
+
+.table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+.table th, .table td {
+    font-size: 12px;
+    padding: 8px;
+    text-align: center;
+}
+
+.table thead th{ 
+    text-transform: uppercase;
+    background-color: #ddd;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.table tbody td:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.boton {
+    border: 1px ;
+    padding: 16px; /*espacio alrededor texto*/
+    background-image:url(../images/discordcanary_94568.ico);
+   background-repeat: no-repeat;
+   
+    }
+
+.envoltura2{
+    
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "bienvenidos"
+    "video"
+    "varios";
+    gap:20px
+
+}
+img{
+    border:8px solid rgb(0, 0, 0) ;
+    width: 250px;
+    height: 250x;
+    margin-top: 15px;
+    
+   }
+footer{
+    margin-top: 0;
+}
+
+@media (min-width:500px){
+    .envoltura2{
+        display: grid;
+        margin: 0;
+    grid-template-areas: 
+    "titulo bienvenidos" 
+"varios varios "
+    "video video"
+    ;
+}
+nav ul{
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(8, 8, 6);
+}
+.titulo{
+    color: aliceblue;
+    border: 3px solid rgb(0, 0, 0);
+
+}
+.bienvenidos{
+    color: D;
+    border: 3px solid rgb(0, 0, 0);
+}
+ol li{
+    color: rgb(109, 109, 109);
+    border: 3px solid rgb(0, 0, 0);
+}
+.diego1{
+    color: black;
+    border: 3px solid black;
+}
+.diego2{
+    color: black;
+    border: 4px solid black;
+}
+iframe{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px; }
+
+ }
+  
+
+@media (min-width:768px){
+    .envoltura2{
+        background: rgb(255, 255, 255);
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "titulo bienvenidos varios"
+        "video video video"
+    
+    }
+
+    nav ul{
+        flex-direction: column;
+        border: 2px solid black;
+
+    }
+    ol li{
+        color: black;
+        border: solid 3px goldenrod;
+    }
+    img{
+        color: #0adeff;
+        height: auto;
+    }
+    .bienvenidos{
+        color: rgb(0, 0, 0);
+        border: 1.5px solid seagreen;
+    }
+    .titulo{
+        color: skyblue;
+        border: 2.5px solid skyblue;
+    }
+    footer{
+        color: rgb(0, 0, 0) solid 1.5px;
+        margin-top: auto;
+    }
+    .galeria{
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        margin: 3em;
+        justify-content: center;
+
+    }
+    .delimitador{
+        width:560px;
+        margin:auto;
+        }
+   
+    img{
+        width: 200px;
+        height: 125px;
+        border: 5px solid rgb(0, 0, 0);
+
+    }iframe{
+        position:absolute;
+        height:100%;
+        width:100%;
+        top:0px;
+        left:0px;}
+        .table {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            margin: 0;
+            padding: 0;
+            table-layout: fixed;
+        }
+        
+        .table caption {
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 8px 0px;
+        }
+        
+        .table tr {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+        }
+        
+        .table th, .table td {
+            font-size: 16px;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        .table thead th{ 
+            text-transform: uppercase;
+            background-color: #ddd;
+        }
+        
+        .table tbody tr:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        
+        .table tbody td:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+  }
+@media (min-width:768px){
+.galeria{background: rgb(255, 255, 255);
+    margin-bottom: 1.5em;
+    grid-template-columns: 1fr 4fr 1fr; 
+    grid-template-areas: 
+    "galeria galeria galeria"
+}
+
+
+@media (min-width:1024px){
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+}
+.envoltura2{
+    color: teal;
+}
+.galeria{
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    margin: 0;
+    
+
+}
+.galeria{
+    width: 800px;
+    height: 400px;
+    margin-top: 20px;
+    align-items: center;
+    
+}
+.footer{
+    color: black;
+}
+.table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+}
+
+.table caption {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 8px 0px;
+}
+
+.table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+.table th, .table td {
+    font-size: 20x;
+    padding: 8px;
+    text-align: center;
+}
+
+.table thead th{ 
+    text-transform: uppercase;
+    background-color: #ddd;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.table tbody td:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+ }
