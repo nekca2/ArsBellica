@@ -17,6 +17,10 @@ flex-direction: column;
 min-height: 100%;
 
 }
+.fondonav{
+    background-color: white;
+
+}
 header{
     display: grid;
     justify-content: center;
@@ -35,6 +39,9 @@ header .logo{
 
     
  }
+ .descargas{
+    color: blueviolet;
+ }
 .menu{
     border: 3px solid rgb(8, 8, 6);
        
@@ -47,6 +54,7 @@ margin: 20px auto;
 max-width: 1000px;
 
 }
+
   .color-acento{
     color: blueviolet;
   }
@@ -70,8 +78,10 @@ max-width: 1000px;
 .envoltura2{
     border: 3px solid rgb(255, 255, 255);
     height: 100%;
+
     
 }
+
 .logoars{
     border:transparent
 }
@@ -134,6 +144,7 @@ header{
 .envoltura2{
     grid-area: envoltura2;
 }
+
 .bienvenidos{
     grid-area: bienvenidos;
 }
@@ -279,6 +290,7 @@ iframe{
     left:0px; }
 
  }
+
   
 
 @media (min-width:768px){
@@ -319,11 +331,8 @@ iframe{
     }
     .galeria{
         background-color: rgb(255, 255, 255);
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 15px;
-        margin: 3em;
-        justify-content: center;
+        display:block;
+    justify-content: center;
 
     }
     .delimitador{
