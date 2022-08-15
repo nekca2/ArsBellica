@@ -1,0 +1,56 @@
+.envoltura2 {
+    border: 3px solid rgb(78, 78, 78);
+    height: 100%;
+    background:linear-gradient( black, rgb(61, 61, 61) );
+    margin-bottom: 0.5em;
+
+    .logoars {
+        border: transparent;
+      }
+      .bienvenidos {
+        border: 3px solid rgb(255, 255, 255);
+        color: rgb(243, 232, 135)
+      }
+      .varios {
+        display: grid;
+        color: #f8f8f8;
+      }
+    }
+    .table {
+        width: 100%;
+        border: 1px solid rgb(95, 95, 95);
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        table-layout: fixed;
+        .table caption {
+  
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 8px 0px;
+          }
+    
+          .table tr {
+            color: #ddd;
+            background-color: #999999;
+            border: 1px solid #ddd;
+          }
+
+          .table th, .table td {
+            font-size: 12px;
+            padding: 8px;
+            text-align: center;
+          }
+          .table thead th {
+            text-transform: uppercase;
+            background-color: rgb(20, 18, 18);
+          }        
+          .table tbody tr:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+          }
+          .table tbody td:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+          }
+    }
+      

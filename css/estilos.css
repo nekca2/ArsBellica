@@ -17,13 +17,13 @@ body {
   min-height: 100%;
 }
 
-.fondonav {
-  background-color: white;
+.envoltura {
+  margin-bottom: -0.5em;
+  height: 100%;
 }
 
 header {
   display: grid;
-  justify-content: center;
 }
 
 header .logo {
@@ -34,50 +34,23 @@ header .logo {
   font-size: 1.6em;
 }
 
-.menu {
-  list-style-type: none;
-}
-
 .descargas {
   color: blueviolet;
 }
 
-.menu {
-  border: 3px solid rgb(8, 8, 6);
-  list-style: none;
-  padding: 0;
-  background: rgb(255, 255, 255);
-  width: 100%;
-  margin: 20px auto;
-  max-width: 1000px;
-}
-
-.color-acento {
-  color: blueviolet;
+.logo {
+  color: rgb(0, 0, 0);
 }
 
 .h2 {
   display: flex;
 }
 
-.menu li {
-  display: inline-block;
-}
-
-.menu li a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  display: block;
-  padding: 20px;
-}
-
-.menu li a:hover {
-  background: blueviolet;
-}
-
 .envoltura2 {
-  border: 3px solid rgb(255, 255, 255);
+  border: 3px solid rgb(78, 78, 78);
   height: 100%;
+  background: linear-gradient(black, rgb(61, 61, 61));
+  margin-bottom: 0.5em;
 }
 
 .logoars {
@@ -86,6 +59,7 @@ header .logo {
 
 .varios {
   display: grid;
+  color: #f8f8f8;
 }
 
 .delimitador {
@@ -115,21 +89,12 @@ iframe {
 
 .bienvenidos {
   border: 3px solid rgb(255, 255, 255);
+  color: rgb(243, 232, 135);
 }
 
 a {
-  color: black;
+  color: rgb(247, 242, 242);
   text-decoration: none;
-}
-
-.diego1 {
-  color: black;
-  border: 3px solid black;
-}
-
-.diego2 {
-  color: black;
-  border: 4px solid black;
 }
 
 footer {
@@ -141,6 +106,22 @@ footer {
 
 header {
   grid-area: header;
+}
+
+.fondo {
+  background: linear-gradient(black, rgb(61, 61, 61));
+}
+
+h1 {
+  color: rgb(255, 254, 254);
+}
+
+.fondo2 {
+  color: white;
+}
+
+.fondo3 {
+  color: white;
 }
 
 .envoltura3 {
@@ -163,20 +144,8 @@ footer {
   grid-area: video;
 }
 
-.diego1 {
-  grid-area: diego1;
-}
-
-.diego2 {
-  grid-area: diego2;
-}
-
 .varios {
   grid-area: varios;
-}
-
-.galeria {
-  grid-area: galeria;
 }
 
 .delimitador {
@@ -184,14 +153,14 @@ footer {
 }
 
 header {
-  background-color: rgb(255, 255, 255);
-  margin-bottom: 1.5em;
+  background-color: rgb(119, 119, 119);
+  margin-bottom: 1em;
   display: grid;
 }
 
 .table {
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(95, 95, 95);
   border-collapse: collapse;
   margin: 0;
   padding: 0;
@@ -206,7 +175,8 @@ header {
 }
 
 .table tr {
-  background-color: #f8f8f8;
+  color: #ddd;
+  background-color: #999999;
   border: 1px solid #ddd;
 }
 
@@ -218,7 +188,7 @@ header {
 
 .table thead th {
   text-transform: uppercase;
-  background-color: #ddd;
+  background-color: rgb(20, 18, 18);
 }
 
 .table tbody tr:hover {
@@ -237,16 +207,15 @@ header {
 }
 
 .envoltura2 {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
   display: grid;
   grid-template-areas: "titulo" "bienvenidos" "video" "varios";
   gap: 20px;
 }
 
 img {
-  border: 8px solid rgb(0, 0, 0);
-  width: 250px;
-  height: 250x;
+  width: 100%;
+  height: auto;
   margin-top: 15px;
 }
 
@@ -260,42 +229,37 @@ footer {
     margin: 0;
     grid-template-areas: "titulo bienvenidos" "varios varios " "video video";
   }
-  nav ul {
-    color: rgb(0, 0, 0);
-    border: 3px solid rgb(8, 8, 6);
-  }
-  .titulo {
-    color: aliceblue;
-    border: 3px solid rgb(0, 0, 0);
-  }
-  .bienvenidos {
-    color: D;
-    border: 3px solid rgb(0, 0, 0);
-  }
-  ol li {
-    color: rgb(109, 109, 109);
-    border: 3px solid rgb(0, 0, 0);
-  }
-  .diego1 {
-    color: black;
-    border: 3px solid black;
-  }
-  .diego2 {
-    color: black;
-    border: 4px solid black;
-  }
-  iframe {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-  }
 }
+.titulo {
+  color: aliceblue;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.bienvenidos {
+  color: D;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+ol li {
+  color: rgb(109, 109, 109);
+  border: 3px solid rgb(0, 0, 0);
+}
+
+iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
 @media (min-width: 768px) {
+  .body {
+    background-color: black;
+  }
   .envoltura2 {
-    background: rgb(255, 255, 255);
-    margin-bottom: 1.5em;
+    background: linear-gradient(black, rgb(61, 61, 61));
+    margin-bottom: 0.5em;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas: "titulo bienvenidos varios" "video video video";
   }
@@ -304,16 +268,16 @@ footer {
     border: 2px solid black;
   }
   ol li {
-    color: black;
-    border: solid 3px goldenrod;
+    color: rgb(253, 247, 247);
+    border: 3px solid rgb(0, 0, 0);
   }
   img {
-    color: #0adeff;
+    width: 100%;
     height: auto;
   }
   .bienvenidos {
-    color: rgb(0, 0, 0);
-    border: 1.5px solid seagreen;
+    color: rgb(243, 232, 135);
+    border: 1.5px solid black;
   }
   .titulo {
     color: skyblue;
@@ -331,11 +295,6 @@ footer {
   .delimitador {
     width: 560px;
     margin: auto;
-  }
-  img {
-    width: 200px;
-    height: 125px;
-    border: 5px solid rgb(0, 0, 0);
   }
   iframe {
     position: absolute;
@@ -359,7 +318,8 @@ footer {
     margin: 8px 0px;
   }
   .table tr {
-    background-color: #f8f8f8;
+    color: black;
+    background-color: #ffffff;
     border: 1px solid #ddd;
   }
   .table th, .table td {
@@ -369,16 +329,17 @@ footer {
   }
   .table thead th {
     text-transform: uppercase;
-    background-color: #ddd;
+    background-color: rgb(212, 211, 211);
   }
   .table tbody tr:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.884);
   }
   .table tbody td:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.884);
   }
-}
-@media (min-width: 768px) {
+  .body {
+    background-color: black;
+  }
   .galeria {
     background: rgb(255, 255, 255);
     margin-bottom: 1.5em;
@@ -386,82 +347,4 @@ footer {
     grid-template-areas: "galeria galeria galeria";
   }
 }
-@media (min-width: 768px) and (min-width: 1024px) {
-  body {
-    background-color: rgb(255, 255, 255);
-  }
-}
-@media (min-width: 768px) {
-  .envoltura2 {
-    color: teal;
-  }
-}
-@media (min-width: 768px) {
-  .galeria {
-    padding: 1.5em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: auto;
-    margin: 0;
-  }
-}
-@media (min-width: 768px) {
-  .galeria {
-    width: 800px;
-    height: 400px;
-    margin-top: 20px;
-    align-items: center;
-  }
-}
-@media (min-width: 768px) {
-  .footer {
-    color: black;
-  }
-}
-@media (min-width: 768px) {
-  .table {
-    width: 100%;
-    border: 1px solid #ccc;
-    border-collapse: collapse;
-    margin: 0;
-    padding: 0;
-    table-layout: fixed;
-  }
-}
-@media (min-width: 768px) {
-  .table caption {
-    font-size: 28px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 8px 0px;
-  }
-}
-@media (min-width: 768px) {
-  .table tr {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-  }
-}
-@media (min-width: 768px) {
-  .table th, .table td {
-    font-size: 20x;
-    padding: 8px;
-    text-align: center;
-  }
-}
-@media (min-width: 768px) {
-  .table thead th {
-    text-transform: uppercase;
-    background-color: #ddd;
-  }
-}
-@media (min-width: 768px) {
-  .table tbody tr:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-}
-@media (min-width: 768px) {
-  .table tbody td:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-}/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos.css.map *//*# sourceMappingURL=estilos.css.map */
